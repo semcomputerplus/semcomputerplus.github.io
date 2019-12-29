@@ -11,230 +11,231 @@
 
 <body>
 
-# Frontend Development 2019/2020
+  # Frontend Development 2019/2020
 
-Sympatyczna gra na doskonalenie znajomości atrybutów Flexbox'a:
+  Sympatyczna gra na doskonalenie znajomości atrybutów Flexbox'a:
 
-> https://flexboxfroggy.com/#pl
+  &gt; https://flexboxfroggy.com/#pl
 
-Idea jest prosta: używając odpowiednich atrybutów i właściwości umieszczamy żaby na kwiatach wodnych.
+  Idea jest prosta: używając odpowiednich atrybutów i właściwości umieszczamy żaby na kwiatach wodnych.
 
-Gra podpowiada jakich atrybutów mamy użyć, naszym zadaniem jest dobrać ich odpowiednie wartości.
+  Gra podpowiada jakich atrybutów mamy użyć, naszym zadaniem jest dobrać ich odpowiednie wartości.
 
----
+  ---
 
-## Język HTML
+  ## Język HTML
 
-Wprowadzony w 1997 HTML w wersji 4 posiadał wiele oganiczeń, toteż szybko
-stał się przestarzały. Sprawę komplikował fakt, iż projektanci stron
-internetowych nie zawsze pisali kod HTML zgodnie z przyjętymi standardami.
-Skutkowało to często m.in. niewłaściwym interpretowaniem kodu przez
-przeglądarki i niepoprawnym wyświetlaniem dokumentów. Rozpoczęto więc
-prace nad nową wersją języka. Ostatecznie pojawił się nowy standard -
-XHTML, w którym wprowadzono znacznie ściślejsze zasady dotyczące
-pisania kodu (np. wymóg, aby znaczniki języka HTML były zawsze były
-pisane małą literą). Dodatkowo, nowy standard oparto o inny język
-opisowy, powszechnie wykorzystywany do opisywania danych - XML. Wymusiło
-to zmiany w zapisie kodu w porównaniu do wcześniejszych wersji języka
-HTML (m.in. wspomniana wcześniej konieczność zamykania znaczników
-pojedynczych).
+  Wprowadzony w 1997 HTML w wersji 4 posiadał wiele oganiczeń, toteż szybko
+  stał się przestarzały. Sprawę komplikował fakt, iż projektanci stron
+  internetowych nie zawsze pisali kod HTML zgodnie z przyjętymi standardami.
+  Skutkowało to często m.in. niewłaściwym interpretowaniem kodu przez
+  przeglądarki i niepoprawnym wyświetlaniem dokumentów. Rozpoczęto więc
+  prace nad nową wersją języka. Ostatecznie pojawił się nowy standard -
+  XHTML, w którym wprowadzono znacznie ściślejsze zasady dotyczące
+  pisania kodu (np. wymóg, aby znaczniki języka HTML były zawsze były
+  pisane małą literą). Dodatkowo, nowy standard oparto o inny język
+  opisowy, powszechnie wykorzystywany do opisywania danych - XML. Wymusiło
+  to zmiany w zapisie kodu w porównaniu do wcześniejszych wersji języka
+  HTML (m.in. wspomniana wcześniej konieczność zamykania znaczników
+  pojedynczych).
 
-Mimo, iż nowa wersja miała, w zamierzeniu, zapewnić
-większą zgodność pisowni dokumentów hipertekstowych z ustanowionymi
-standardami, ostatecznie wprowadziła dalsze komplikacje. Prace nad
-opracowaniem języka XHTML w wersji 2.0 zostały przerwane, rozpoczęto
-natomiast opracowywanie nowego standardu, który oznaczon jako HTML5.
-Cechami wyróżniającymi nową wersję języka jest uproszczenie kodu w
-stosunku do języka XHTML. Przywrócono także możliwość zapisywania
-znaczników wielkimi literami. Obok zmian w sposobie zapisu, język HTML5
-wnosi wiele nowych rozwiązań. Pojawiły się nowe znaczniki semantyczne,
-umożliwiające w więszym stopniu "rozumienie" treści w nie ujmowanych
-przez np. wyszukiwarki internetowe.
+  Mimo, iż nowa wersja miała, w zamierzeniu, zapewnić
+  większą zgodność pisowni dokumentów hipertekstowych z ustanowionymi
+  standardami, ostatecznie wprowadziła dalsze komplikacje. Prace nad
+  opracowaniem języka XHTML w wersji 2.0 zostały przerwane, rozpoczęto
+  natomiast opracowywanie nowego standardu, który oznaczon jako HTML5.
+  Cechami wyróżniającymi nową wersję języka jest uproszczenie kodu w
+  stosunku do języka XHTML. Przywrócono także możliwość zapisywania
+  znaczników wielkimi literami. Obok zmian w sposobie zapisu, język HTML5
+  wnosi wiele nowych rozwiązań. Pojawiły się nowe znaczniki semantyczne,
+  umożliwiające w więszym stopniu "rozumienie" treści w nie ujmowanych
+  przez np. wyszukiwarki internetowe.
 
-Struktura dokumentu HTML określa porządek w dokumencie i umożliwia
-poprawną interpretację treści przez przeglądarki internetowe.
-Składają się na nią dwie części - sekcja *head*, czyli nagłówek
-dokumentu oraz sekcja *body*, w której zamieszczona jest treść dokumentu.
+  Struktura dokumentu HTML określa porządek w dokumencie i umożliwia
+  poprawną interpretację treści przez przeglądarki internetowe.
+  Składają się na nią dwie części - sekcja *head*, czyli nagłówek
+  dokumentu oraz sekcja *body*, w której zamieszczona jest treść dokumentu.
 
-Przeglądarki wyświetlają całą treść dokumentu zamieszczoną w sekcji
-*body*, natomiast - poza pewnymi wyjątkami - zawartość sekcji *head* jest
-dla odbiorcy niewidoczna (co nie oznacza, że nie jest ważna).
+  Przeglądarki wyświetlają całą treść dokumentu zamieszczoną w sekcji
+  *body*, natomiast - poza pewnymi wyjątkami - zawartość sekcji *head* jest
+  dla odbiorcy niewidoczna (co nie oznacza, że nie jest ważna).
 
-W określonych przypadkach dokument HTML może składać się wyłącznie z
-sekcji *body*.
+  W określonych przypadkach dokument HTML może składać się wyłącznie z
+  sekcji *body*.
 
-Pierwszym elementem dokumentu HTML jest określenie samego typu dokumentu.
-Zdefiniowano kilka rodzajów deklaracji typów dokumentu HTML, które
-określają zasady pisowni kodu HTML oraz zakres dozwolonych w ramach danej
-deklaracji znaczników oraz ich atrybutów.
+  Pierwszym elementem dokumentu HTML jest określenie samego typu dokumentu.
+  Zdefiniowano kilka rodzajów deklaracji typów dokumentu HTML, które
+  określają zasady pisowni kodu HTML oraz zakres dozwolonych w ramach danej
+  deklaracji znaczników oraz ich atrybutów.
 
-Deklarację typu dokumentu podajemy na samym początku dokumentu HTML.
+  Deklarację typu dokumentu podajemy na samym początku dokumentu HTML.
 
-## Rodzaje deklaracji:
+  ## Rodzaje deklaracji:
 
-Struktura przykładowego dokumentu w standardzie HTML5 wygląda
-następująco.
+  Struktura przykładowego dokumentu w standardzie HTML5 wygląda
+  następująco.
 
-Pierwszym znacznikiem kodu HTML, po określeniu typu dokumentu, jest
-znacznik *<html>*. Znacznik ten jest zamykany jako ostatni w kodzie
-dokumentu.
+  Pierwszym znacznikiem kodu HTML, po określeniu typu dokumentu, jest
+  znacznik *&lt;html&gt;*. Znacznik ten jest zamykany jako ostatni w kodzie
+  dokumentu.
 
-Następnie otwierana jest sekcja nagłówka dokumentu. Nie powinno w niej
-zabraknąć znacznika *<title>*, czyli tytułu samego dokumentu (który jest
-wyświetlany przez przeglądarkę np. na karcie otwartego dokumentu).
+  Następnie otwierana jest sekcja nagłówka dokumentu. Nie powinno w niej
+  zabraknąć znacznika *&lt;title&gt;*, czyli tytułu samego dokumentu (który jest
+  wyświetlany przez przeglądarkę np. na karcie otwartego dokumentu).
 
-Bardzo istotnymi znacznikami są tzw. znaczniki meta. Nie są one widoczne
-dla użytkownika, pełnią jednak ważne funkcje. Do tej grupy należy
-m.in.
+  Bardzo istotnymi znacznikami są tzw. znaczniki meta. Nie są one widoczne
+  dla użytkownika, pełnią jednak ważne funkcje. Do tej grupy należy
+  m.in.
 
-- *<meta name="description" content="">* - zawierający rozszerzony opis strony,
-- *<meta name="author" content="">* - informujący o autorze dokumentu,
-- *<meta name="robots" content="">* - określający sposób, w jaki dokument będzie traktowany
-przez tzw. roboty indeksujące (Google i innych wyszukiwarek).
+  - *&lt;meta name="description" content=""&gt;* - zawierający rozszerzony opis strony,
+  - *&lt;meta name="author" content=""&gt;* - informujący o autorze dokumentu,
+  - *&lt;meta name="robots" content=""&gt;* - określający sposób, w jaki dokument będzie traktowany
+  przez tzw. roboty indeksujące (Google i innych wyszukiwarek).
 
----
+  ---
 
-STRUKTURA DOKUMENTU HTML
+  STRUKTURA DOKUMENTU HTML
 
-Podstawowa struktura dokumentu HTML (bez zawartości) wygląda następująco:
+  Podstawowa struktura dokumentu HTML (bez zawartości) wygląda następująco:
 
-> <!DOCTYPE HTML>
-> <html>
->    <head>
->    </head>
->    <body>
->    </body>
-> </html>
+  &lt;!DOCTYPE HTML&gt;
+  &lt;html&gt;
+     &lt;head&gt;
+     &lt;/head&gt;
+     &lt;body&gt;
+     &lt;/body&gt;
+  &lt;/html&gt;
 
-!DOCTYPE nie jest właściwie znacznikiem, jak pozostałe znaczniki języka HTML. To bardziej komentarz formatu SGML (Standard Generalized Markup language).
-Jest to informacja, że dany dokument zawiera treść opisaną kodem języka HTML
-Wymagane jest, aby !DOCTYPE - czyli okreslenie typu dokumentu (DTD - document type definition; DOC - skrót od dokument i TYP - typ) - znjadował się na samym początku dokumentu HTML (a zatem jeszcze przed znacznikiem <html>).
-Zadeklarowanie typu dokumentu właśnie przez ten "znacznik" (czy też "znaczniko-komentarz") podaje instrukcję przeglądarce wyświetlającej ten dokument, niejako uprzedzając, z jakim rodzajem kodu ma ona do czynienia i jak należy ów kod wizualizować.
-Niestety, podanie deklaracji typu dokumentu ma charakter wyłącznie informujący i - niestety - w przypadku, gdy internauta korzysta ze starszej wersji przeglądarki nie unikniemy problemów spowodowanych np. brakiem obsługi niektórych (zwłaszcza tych nowszych, charakterystycznych dla np. wersji 5 języka HTML) znaczników.
-Zdefiniowano  kilka rodzajów !DOCTYPE, w zależności od wydań i odmian języka HTML. Obok informacji o rodzaju języka (HTML)podawana jest także informacja o wydawcy (W3C), wersji (4.01) oraz języku (EN). Ponadto, w deklaracji znajduje się odnośnik do witryny internetowej konsorcjum W3C, zawierający dokładną specyfikację danej wersji i odmiany języka HTML.
-Przykłady !DOCTYPE dla najpopularniejszych wersji i odmian języka HTML.
+  !DOCTYPE nie jest właściwie znacznikiem, jak pozostałe znaczniki języka HTML. To bardziej komentarz formatu SGML (Standard Generalized Markup language).
+  Jest to informacja, że dany dokument zawiera treść opisaną kodem języka HTML
+  Wymagane jest, aby !DOCTYPE - czyli okreslenie typu dokumentu (DTD - document type definition; DOC - skrót od dokument i TYP - typ) - znjadował się na samym początku dokumentu HTML (a zatem jeszcze przed znacznikiem &lt;html&gt;).
+  Zadeklarowanie typu dokumentu właśnie przez ten "znacznik" (czy też "znaczniko-komentarz") podaje instrukcję przeglądarce wyświetlającej ten dokument, niejako uprzedzając, z jakim rodzajem kodu ma ona do czynienia i jak należy ów kod wizualizować.
+  Niestety, podanie deklaracji typu dokumentu ma charakter wyłącznie informujący i - niestety - w przypadku, gdy internauta korzysta ze starszej wersji przeglądarki nie unikniemy problemów spowodowanych np. brakiem obsługi niektórych (zwłaszcza tych nowszych, charakterystycznych dla np. wersji 5 języka HTML) znaczników.
+  Zdefiniowano  kilka rodzajów !DOCTYPE, w zależności od wydań i odmian języka HTML. Obok informacji o rodzaju języka (HTML)podawana jest także informacja o wydawcy (W3C), wersji (4.01) oraz języku (EN). Ponadto, w deklaracji znajduje się odnośnik do witryny internetowej konsorcjum W3C, zawierający dokładną specyfikację danej wersji i odmiany języka HTML.
+  Przykłady !DOCTYPE dla najpopularniejszych wersji i odmian języka HTML.
 
-Dla wersji 4.01 i odmiany ścisłej:
+  Dla wersji 4.01 i odmiany ścisłej:
 
-> <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+  &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;
 
-Dla wersji 4.01 i odmiany tzw. "luźnej":
+  Dla wersji 4.01 i odmiany tzw. "luźnej":
 
-> <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+  &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;
 
-Dla wersji XHTML 1.0 i odmiany ścisłej:
+  Dla wersji XHTML 1.0 i odmiany ścisłej:
 
-> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
 
-Dla wersji XHTML 1.0 i odmiany "luźnej":
+  Dla wersji XHTML 1.0 i odmiany "luźnej":
 
-> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 
-Dla najnowszej wersji HTML5 (łatwo zauważyć znaczne uproszczenie deklaracji w porównaniu do wcześniejszych wersji języka):
+  Dla najnowszej wersji HTML5 (łatwo zauważyć znaczne uproszczenie deklaracji w porównaniu do wcześniejszych wersji języka):
 
-> <!DOCTYPE HTML>
+  &lt;!DOCTYPE HTML&gt;
 
-Nasuwa się w tym miejscu pytanie - co się stanie w przypadku, gdy zabraknie !DOCTYPE lub będzie on podany błędnie. Otóż, przeglądarka przełączy się w tzw. "quirks mode", który spowoduje odmienne sposób traktowania danego dokumentu przez przeglądarkę - aplikacja będzie starać się wyświetlić dany dokument zgodnie z tzw. kompatybilnością wsteczną. Niestety, może to spowodować, że niektóre elementy kodu zostaną np. zignorowane lub dokument może wyświetlać się w inny niż oczekiwany sposób (a zatem, mimo braku błędów w składni dokumentu może on po prostu nie funkcjonować poprawnie).
+  Nasuwa się w tym miejscu pytanie - co się stanie w przypadku, gdy zabraknie !DOCTYPE lub będzie on podany błędnie. Otóż, przeglądarka przełączy się w tzw. "quirks mode", który spowoduje odmienne sposób traktowania danego dokumentu przez przeglądarkę - aplikacja będzie starać się wyświetlić dany dokument zgodnie z tzw. kompatybilnością wsteczną. Niestety, może to spowodować, że niektóre elementy kodu zostaną np. zignorowane lub dokument może wyświetlać się w inny niż oczekiwany sposób (a zatem, mimo braku błędów w składni dokumentu może on po prostu nie funkcjonować poprawnie).
 
-Znacznik <html> jest pierwszym znacznikiem języka HTML w pełnym tego słowa znaczeniu i jest pierwszym elementem kodu dokumentu (ustępując jedynie elementowi !DOCTYPE). Jest znacznikiem blokowym, w którym zawarte są wszystkie pozostałe znaczniki (head, body, h1, h2, p, itd.).  Ponieważ jest to znacznik parzysty, wymagane jest jego zamknięcie, które powinno się znajdować na końcu dokumentu HTML.
+  Znacznik &lt;html&gt; jest pierwszym znacznikiem języka HTML w pełnym tego słowa znaczeniu i jest pierwszym elementem kodu dokumentu (ustępując jedynie elementowi !DOCTYPE). Jest znacznikiem blokowym, w którym zawarte są wszystkie pozostałe znaczniki (head, body, h1, h2, p, itd.).  Ponieważ jest to znacznik parzysty, wymagane jest jego zamknięcie, które powinno się znajdować na końcu dokumentu HTML.
 
-Znacznik <html> posiada dodatkowe elementy - atrybuty. Są to:
+  Znacznik &lt;html&gt; posiada dodatkowe elementy - atrybuty. Są to:
 
-- lang (language - ang. język), który określa język treści danego dokumentu; dla języka polskiego atrybut lang będzie miał postać <html lang="pl">, dla niemieckiego - <html lang="de">.
-- xmlns (wymagany wyłącznie w wersji XHTML), który jest wykorzystywany przez przeglądarki z rodziny Internet Explorer do określenia elementów spoza języka HTML; zapisujemy ten atrybut w następującej postaci <html xmlns="http://www.w3.org/1999/xhtml">
+  - lang (language - ang. język), który określa język treści danego dokumentu; dla języka polskiego atrybut lang będzie miał postać &lt;html lang="pl"&gt;, dla niemieckiego - &lt;html lang="de"&gt;.
+  - xmlns (wymagany wyłącznie w wersji XHTML), który jest wykorzystywany przez przeglądarki z rodziny Internet Explorer do określenia elementów spoza języka HTML; zapisujemy ten atrybut w następującej postaci &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 
-Znacznik <head> zawiera istotne informacje o samym dokumencie HTML, umożliwiające także jego poprawne wyświetlanie. Jednakże elementy sekcji head - poza jednym wyjątkiem - nie są widoczne w oknie przeglądarki. Zawierają się w niej takie elementy jak:
+  Znacznik &lt;head&gt; zawiera istotne informacje o samym dokumencie HTML, umożliwiające także jego poprawne wyświetlanie. Jednakże elementy sekcji head - poza jednym wyjątkiem - nie są widoczne w oknie przeglądarki. Zawierają się w niej takie elementy jak:
 
-- title, czyli tytuł dokumentu; jest to jedyny element, który jest widoczny na karcie przeglądarki, wyświetlany jest także, jeśli opublikowany dokument HTML zostanie wyświetlony w wyszukiwarce internetowej (np. Google, Bing, itp.), informacje o autorze, datę opublikowania dokumentu i wiele innych.
-- znaczniki meta - jest to grupa znaczników zawierających informacje m.in. o kodowaniu znaków w dokumencie,  rozszerzony opis dokumentu, instrukcje dla wyszukiwarek.
-- znaczniki link, umożliwiające dołączenie do dokumentu zewnętrznych plików, np. arkuszy stylów CSS, skryptów JavaScript, itp.
-- w sekcji <head> można również bezpośrednio zapisywać dodatkowe elementy spoza języka HTML, np. wewnętrzny arkusz stylów CSS lub skrypty JavaScript.
+  - title, czyli tytuł dokumentu; jest to jedyny element, który jest widoczny na karcie przeglądarki, wyświetlany jest także, jeśli opublikowany dokument HTML zostanie wyświetlony w wyszukiwarce internetowej (np. Google, Bing, itp.), informacje o autorze, datę opublikowania dokumentu i wiele innych.
+  - znaczniki meta - jest to grupa znaczników zawierających informacje m.in. o kodowaniu znaków w dokumencie,  rozszerzony opis dokumentu, instrukcje dla wyszukiwarek.
+  - znaczniki link, umożliwiające dołączenie do dokumentu zewnętrznych plików, np. arkuszy stylów CSS, skryptów JavaScript, itp.
+  - w sekcji &lt;head&gt; można również bezpośrednio zapisywać dodatkowe elementy spoza języka HTML, np. wewnętrzny arkusz stylów CSS lub skrypty JavaScript.
 
-Znacznik <head> jest znacznikiem parzystym i wymagane jest jego zamknięcie po określeniu wszystkich elementów opisujących dany dokument HTML.
+  Znacznik &lt;head&gt; jest znacznikiem parzystym i wymagane jest jego zamknięcie po określeniu wszystkich elementów opisujących dany dokument HTML.
 
-Znacznik <body> zawiera tę część dokumentu HTML, która jest wyświetlana w oknie przeglądarki. Znacznik ten znajduje się po zamknięciu znacznika <head>. W starszych wersjach języka HTML znacznika <body> używano także do określenia wyglądu dokumentu (tła, kolorystyki, rodzaju i wielkości czcionek). Obecnie te parametry definiujemy osobno w arkuszu stylów. Niemniej jednak, nadal możliwe jest określanie wyglądu dokumentu poprzez dodatkowe atrybuty w znaczniku <body>. Są to:
-- alink, określa kolor odnośnika w momencie kliknięcia w niego przez użytkownika; jeżeli odnośnikiem jest tekst, wówczas zmienia się kolor tekstu, a jeżeli obrazek - zmienia się kolor obramowania obrazka; nadanie atrybutu alink znacznikowi <body> ma następującą postać <body alink="green">
-- background, definiuje tło obrazkowe dla dokumentu HTML; obrazek wskazany przez atrybut background zostanie wyświetlony w skali 1:1 i będzie wypełniał całe okno przeglądarki (w przypadku, gdy zawartość będzie miała większą powierzchnię, wówczas nastąpi jego zwielokrotnienie w pionie i w poziomie); nadanie atrybutu background ma postać: <body background="tlo.jpg"> (jako tło wskazujemy obrazek o nazwie tlo, przy czym wymagane jest podanie rozszerzenia pliku oraz wskazanie lokalizacji pliku - w tym przypadku plik tlo.jpg znajduje się w tej samek lokalizacji, co dokument HTML).
-- bgcolor, określa jednolity kolor tła, wypeniającego okno dokumentu HTML; nadanie atrybutu bgcolor (w przypadku koloru niebieskiego) ma postać <body bgcolor="blue">; dla optymalnego efektu zaleca się, aby kolor tła był dopasowany do koloru tekstu dokumentu; w sytuacji, gdy połączymy atrybuty background i bgcolor pierwszeństwo posiada atrybut background - tło obrazkowe przykryje jednolity kolor tła.
-- bgproperties, pozwala zablokować tło obrazkowe w jednej pozycji; treść strony może być wówczas przewijana (jeżeli zajmuje większy obszar niż okno przeglądarki), natomiast obrazek tła pozostanie w tym samym miejscu; nadanie atrybutu ma postać <body background="tlo.jpg" bgproperties="fixed">.
-- bottommargin, umożliwia pozostawienie pustej przestrzeni w dolnej części dokumentu HTML wyświetlanego w przeglądarce (może być ona niewidoczna w sytuacji, gdy zawartość dokumentu zajmuje obszar mniejszy od obszaru okna przeglądarki); dla tego atrybutu nie podajemy jednostki miary - domyślnie jest to piksel; nadanie atrybutu ma postać <body bottommargin="20">
-- lang, analogicznie jak w przypadku znacznika <html>, atrybut ten pozwala okreslić język zawartości dokumentu HTML; nadanie atrybutu (w przypadku języka polskiego) ma postać <body lang="pl">
-- leftmargin, podobnie jak w przypadku atrybutu bottommargin, określamy pustą przestrzeń - tym razem z lewej strony; nadanie atrybutu ma postać <body leftmargin="20">
-- link, okresla kolor odnośnika, gdy użytkownik nie podejmuje wobec niego żadnych czynności, a także, gdy odnośnik nie był wcześniej odwiedzony; nadanie atrybutu link ma następującą postać <body link="green">
-- marginheight, podobnie jak w przypadku atrybutów bottommargin i leftmargin, określamy pustą przestrzeń - jednak tym razem jest to przestrzeń zarówno od góry, jak i od dołu zawartości strony; nadanie atrybutu ma postać <body marginheight="20">
-- marginwidth, tym razem określamy pustą przestrzeń z lewej i z prawej strony zawartości; nadanie atrybutu ma postać <body marginwidth="20">
-- nowrap, definiuje, czy zawartość dokumentu HTML będzie zawijana w przypadku, gdy jej szerokość będzie większa niż szerokość okna przeglądarki; brak tego atrybutu oznacza, że zawijanie wierszy będzie występować; nadanie atrybutu (bez wartości) ma postać <body nowrap>
-- rightmargin, podobnie jak w przypadku atrybutów bottommargin, leftmargin, określamy pustą przestrzeń - tym razem z prawej strony; nadanie atrybutu ma postać <body rightmargin="20">
-- scroll, pozwala ukryć suwaki służące do przewijania zawartości; brak tego atrybutu oznacza, że takie suwaki będą wyświetlone;nadanie atrybutu (gdy chcemy ukryć suwaki) ma postać <body scroll="no">
-- text, określa kolor tekstu w dokumencie HTML; może jednak wystąpić sytuacja, że kolor zdefiniowany poprzez ten atrybut zostanie zmieniony, np. przez kolor odnośnika; nadanie atrybutu ma postać <body text="white">
-- topmargin, podobnie jak w przypadku atrybutów bottommargin, leftmargin i rightmargin, określamy pustą przestrzeń - tym razem z góry; nadanie atrybutu ma postać <body topmargin="20">
-- vlink, określa kolor odnośnika, który został wcześniej odwiedzony (kliknięty); kolor odnośnika nie powróci do pierwotnej postaci dopóki nie wyczyścimy ustawień przeglądarki; nadanie atrybutu ma postać <body vlink="yellow">.
+  Znacznik &lt;body&gt; zawiera tę część dokumentu HTML, która jest wyświetlana w oknie przeglądarki. Znacznik ten znajduje się po zamknięciu znacznika &lt;head&gt;. W starszych wersjach języka HTML znacznika &lt;body&gt; używano także do określenia wyglądu dokumentu (tła, kolorystyki, rodzaju i wielkości czcionek). Obecnie te parametry definiujemy osobno w arkuszu stylów. Niemniej jednak, nadal możliwe jest określanie wyglądu dokumentu poprzez dodatkowe atrybuty w znaczniku &lt;body&gt;. Są to:
+  - alink, określa kolor odnośnika w momencie kliknięcia w niego przez użytkownika; jeżeli odnośnikiem jest tekst, wówczas zmienia się kolor tekstu, a jeżeli obrazek - zmienia się kolor obramowania obrazka; nadanie atrybutu alink znacznikowi &lt;body&gt; ma następującą postać &lt;body alink="green"&gt;
+  - background, definiuje tło obrazkowe dla dokumentu HTML; obrazek wskazany przez atrybut background zostanie wyświetlony w skali 1:1 i będzie wypełniał całe okno przeglądarki (w przypadku, gdy zawartość będzie miała większą powierzchnię, wówczas nastąpi jego zwielokrotnienie w pionie i w poziomie); nadanie atrybutu background ma postać: &lt;body background="tlo.jpg"&gt; (jako tło wskazujemy obrazek o nazwie tlo, przy czym wymagane jest podanie rozszerzenia pliku oraz wskazanie lokalizacji pliku - w tym przypadku plik tlo.jpg znajduje się w tej samek lokalizacji, co dokument HTML).
+  - bgcolor, określa jednolity kolor tła, wypeniającego okno dokumentu HTML; nadanie atrybutu bgcolor (w przypadku koloru niebieskiego) ma postać &lt;body bgcolor="blue"&gt;; dla optymalnego efektu zaleca się, aby kolor tła był dopasowany do koloru tekstu dokumentu; w sytuacji, gdy połączymy atrybuty background i bgcolor pierwszeństwo posiada atrybut background - tło obrazkowe przykryje jednolity kolor tła.
+  - bgproperties, pozwala zablokować tło obrazkowe w jednej pozycji; treść strony może być wówczas przewijana (jeżeli zajmuje większy obszar niż okno przeglądarki), natomiast obrazek tła pozostanie w tym samym miejscu; nadanie atrybutu ma postać &lt;body background="tlo.jpg" bgproperties="fixed"&gt;.
+  - bottommargin, umożliwia pozostawienie pustej przestrzeni w dolnej części dokumentu HTML wyświetlanego w przeglądarce (może być ona niewidoczna w sytuacji, gdy zawartość dokumentu zajmuje obszar mniejszy od obszaru okna przeglądarki); dla tego atrybutu nie podajemy jednostki miary - domyślnie jest to piksel; nadanie atrybutu ma postać &lt;body bottommargin="20"&gt;
+  - lang, analogicznie jak w przypadku znacznika &lt;html&gt;, atrybut ten pozwala okreslić język zawartości dokumentu HTML; nadanie atrybutu (w przypadku języka polskiego) ma postać &lt;body lang="pl"&gt;
+  - leftmargin, podobnie jak w przypadku atrybutu bottommargin, określamy pustą przestrzeń - tym razem z lewej strony; nadanie atrybutu ma postać &lt;body leftmargin="20"&gt;
+  - link, okresla kolor odnośnika, gdy użytkownik nie podejmuje wobec niego żadnych czynności, a także, gdy odnośnik nie był wcześniej odwiedzony; nadanie atrybutu link ma następującą postać &lt;body link="green"&gt;
+  - marginheight, podobnie jak w przypadku atrybutów bottommargin i leftmargin, określamy pustą przestrzeń - jednak tym razem jest to przestrzeń zarówno od góry, jak i od dołu zawartości strony; nadanie atrybutu ma postać &lt;body marginheight="20"&gt;
+  - marginwidth, tym razem określamy pustą przestrzeń z lewej i z prawej strony zawartości; nadanie atrybutu ma postać &lt;body marginwidth="20"&gt;
+  - nowrap, definiuje, czy zawartość dokumentu HTML będzie zawijana w przypadku, gdy jej szerokość będzie większa niż szerokość okna przeglądarki; brak tego atrybutu oznacza, że zawijanie wierszy będzie występować; nadanie atrybutu (bez wartości) ma postać &lt;body nowrap&gt;
+  - rightmargin, podobnie jak w przypadku atrybutów bottommargin, leftmargin, określamy pustą przestrzeń - tym razem z prawej strony; nadanie atrybutu ma postać &lt;body rightmargin="20"&gt;
+  - scroll, pozwala ukryć suwaki służące do przewijania zawartości; brak tego atrybutu oznacza, że takie suwaki będą wyświetlone;nadanie atrybutu (gdy chcemy ukryć suwaki) ma postać &lt;body scroll="no"&gt;
+  - text, określa kolor tekstu w dokumencie HTML; może jednak wystąpić sytuacja, że kolor zdefiniowany poprzez ten atrybut zostanie zmieniony, np. przez kolor odnośnika; nadanie atrybutu ma postać &lt;body text="white"&gt;
+  - topmargin, podobnie jak w przypadku atrybutów bottommargin, leftmargin i rightmargin, określamy pustą przestrzeń - tym razem z góry; nadanie atrybutu ma postać &lt;body topmargin="20"&gt;
+  - vlink, określa kolor odnośnika, który został wcześniej odwiedzony (kliknięty); kolor odnośnika nie powróci do pierwotnej postaci dopóki nie wyczyścimy ustawień przeglądarki; nadanie atrybutu ma postać &lt;body vlink="yellow"&gt;.
 
-## KOLORYSTYKA W DOKUMENCIE HTML
+  ## KOLORYSTYKA W DOKUMENCIE HTML
 
-Kolorystykę w dokumencie HTML (oraz w arkuszach stylów CSS) definiujemy na 4 sposoby - poprzez podanie ściśle określonej nazwy koloru, zapis szesnastkowy koloru, zapis przy użyciu wartość kolorów składowych (czerwonego, zielonego i niebieskiego) oraz poprzez podanie cech koloru (odcienia, nasycenia i jasności).
-Przeglądarki poprawnie interpretują i wyświetlają kolory zdefiniowane przy użyciu angielskich słów, np. red - kolor czerwony, orange - pomarańczowy. Specyfikacja języka HTML 4.01 określa zaledwie 16 kolorów (cyjan, czarny, niebieski, fuksja, zielony, szary, limonka, wiśniowy, granatowy, oliwkowy, fioletowy, czerwony, srebrny, morski, biały, żółty).
-Obecnie do dyspozycji mamy kilkadziesiąt różnych odcieni następujących kolorów: czerwonego, różowego, pomarańczowego, żółtego, fioletowego, zielonego, niebieskiego, brązowego, białego oraz szarego.
-Znacznie wygodniejszym i dającym większe możliwości definiowania kolorów jest zapis szesnastkowy, na który składa się sześć znaków zapisanych w systemie szesnastkowym (cyfry od 0 do 9 oraz litery od A do F), które łącznie tworzą 3 bajty (1 bajt = 1 para znaków).
-Zgodnie ze sposobem generowania barw opartym o RGB (ang. red, green, blue - czerwony, zielony, niebieski) poszczególne bajty tworzą kolejno: barwę czerwoną, zieloną i niebieską. Każdy bajt może przyjmować wartości od 0 (wartość najmniejsza, w zapisie szesnastkowym 00) do 255 (wartość największa, w zapisie szesnastkowym ff).
-Jeżeli w parze występują identyczne znaki (np. 00, aa, ff) możemy użyć formy skróconej (0, a, f).
-Dzięki użyciu zapisu szesnastkowego możemy zapisać ponad 16 milionów różnych barw(256 razy 256 = 16 777 216).
-Określenie koloru białego (wartość maksymalna) ma postać #ffffff. W postaci skróconej - #fff.
-Zapis przy użyciu wartości RGB jest analogiczny do szesnastkowego. Zamiast podania wartości danego koloru w postaci zapisu szesnastkowego podajemy zapis dziesiętny (wartości podajemy w nawiasach kołowych, oddzielając je przecinkami).
-Określenie koloru czarnego (wartość minimalna) ma postać RGB(0,0,0).
+  Kolorystykę w dokumencie HTML (oraz w arkuszach stylów CSS) definiujemy na 4 sposoby - poprzez podanie ściśle określonej nazwy koloru, zapis szesnastkowy koloru, zapis przy użyciu wartość kolorów składowych (czerwonego, zielonego i niebieskiego) oraz poprzez podanie cech koloru (odcienia, nasycenia i jasności).
+  Przeglądarki poprawnie interpretują i wyświetlają kolory zdefiniowane przy użyciu angielskich słów, np. red - kolor czerwony, orange - pomarańczowy. Specyfikacja języka HTML 4.01 określa zaledwie 16 kolorów (cyjan, czarny, niebieski, fuksja, zielony, szary, limonka, wiśniowy, granatowy, oliwkowy, fioletowy, czerwony, srebrny, morski, biały, żółty).
+  Obecnie do dyspozycji mamy kilkadziesiąt różnych odcieni następujących kolorów: czerwonego, różowego, pomarańczowego, żółtego, fioletowego, zielonego, niebieskiego, brązowego, białego oraz szarego.
+  Znacznie wygodniejszym i dającym większe możliwości definiowania kolorów jest zapis szesnastkowy, na który składa się sześć znaków zapisanych w systemie szesnastkowym (cyfry od 0 do 9 oraz litery od A do F), które łącznie tworzą 3 bajty (1 bajt = 1 para znaków).
+  Zgodnie ze sposobem generowania barw opartym o RGB (ang. red, green, blue - czerwony, zielony, niebieski) poszczególne bajty tworzą kolejno: barwę czerwoną, zieloną i niebieską. Każdy bajt może przyjmować wartości od 0 (wartość najmniejsza, w zapisie szesnastkowym 00) do 255 (wartość największa, w zapisie szesnastkowym ff).
+  Jeżeli w parze występują identyczne znaki (np. 00, aa, ff) możemy użyć formy skróconej (0, a, f).
+  Dzięki użyciu zapisu szesnastkowego możemy zapisać ponad 16 milionów różnych barw(256 razy 256 = 16 777 216).
+  Określenie koloru białego (wartość maksymalna) ma postać #ffffff. W postaci skróconej - #fff.
+  Zapis przy użyciu wartości RGB jest analogiczny do szesnastkowego. Zamiast podania wartości danego koloru w postaci zapisu szesnastkowego podajemy zapis dziesiętny (wartości podajemy w nawiasach kołowych, oddzielając je przecinkami).
+  Określenie koloru czarnego (wartość minimalna) ma postać RGB(0,0,0).
 
-Wykorzystanie zapisu dziesiętnego posiada pewną zaletę. Możemy bowiem zdefiniować czwartą wartość - przezroczystość barwy. Aby to zrobić dodajemy czwarty znak, literę A do określenia trybu zapisu barw i podajemy czwartą wartość, która przyjmuje wartosci z zakresu 0-1, gdzie 0 oznacza pełną przezroczystość, a 1 - pełne krycie).
+  Wykorzystanie zapisu dziesiętnego posiada pewną zaletę. Możemy bowiem zdefiniować czwartą wartość - przezroczystość barwy. Aby to zrobić dodajemy czwarty znak, literę A do określenia trybu zapisu barw i podajemy czwartą wartość, która przyjmuje wartosci z zakresu 0-1, gdzie 0 oznacza pełną przezroczystość, a 1 - pełne krycie).
 
-Określenie koloru czarnego z niewielką przezroczystością ma postać RGBA(0,0,0,0.8).
+  Określenie koloru czarnego z niewielką przezroczystością ma postać RGBA(0,0,0,0.8).
 
-Zapis przy użyciu modelu HSB (Hue - odcień, S - nasycenie, B - jasność) jest analogiczna do zapisu przy użyciu modelu RGB. Zamiast podawania wartości poszczególnych składowych barwy określamy wartości odcienia, nasycenia i jasności danej barwy. W przypadku trybu HSB również możemy podać czwartą wartość określającą stopień przezroczystości barwy.
-Zapis ma następującą postać: HSB(255, 100, 20).
+  Zapis przy użyciu modelu HSB (Hue - odcień, S - nasycenie, B - jasność) jest analogiczna do zapisu przy użyciu modelu RGB. Zamiast podawania wartości poszczególnych składowych barwy określamy wartości odcienia, nasycenia i jasności danej barwy. W przypadku trybu HSB również możemy podać czwartą wartość określającą stopień przezroczystości barwy.
+  Zapis ma następującą postać: HSB(255, 100, 20).
 
-Ze względu na - nieaktualne obecnie, choć nadal spotykamy tę opcję w programach graficznych - ograniczenia, dążąc do jednakowego wyświetlania kolorów na różnych urządzeniach, stosowano tzw. bezpieczny zestaw kolorów, liczący 216 barw. Cechą wyróżniającą zestawu jest to, że każda wartość może przyjmować jedną z sześciu wartości szesnastkowych: 0x00, 0x33, 0x66, 0x99, 0xCC lub 0xFF.
+  Ze względu na - nieaktualne obecnie, choć nadal spotykamy tę opcję w programach graficznych - ograniczenia, dążąc do jednakowego wyświetlania kolorów na różnych urządzeniach, stosowano tzw. bezpieczny zestaw kolorów, liczący 216 barw. Cechą wyróżniającą zestawu jest to, że każda wartość może przyjmować jedną z sześciu wartości szesnastkowych: 0x00, 0x33, 0x66, 0x99, 0xCC lub 0xFF.
 
-## ELEMENTY SEKCJI HEAD
+  ## ELEMENTY SEKCJI HEAD
 
-Jak już określiliśmy wcześniej, elementy sekcji <head> - poza jednym wyjątkiem - są niewidoczne. Jednakże, są niezbędne, aby dokument HTML był wyświetlany poprawnie.
-Znacznik <title> to tytuł dokumentu HTML, warto zatem zadbać, aby zawierał treść odnoszącą się do jego zawartości oraz skrótowo ją charakteryzującą. Jest to jedyny znacznik, którego zawartość jest prezentowana użytkownikowi (w pasku tytułowym przeglądarki lub na karcie otwartego w przeglądarce dokumentu). Treść znacznika <title> jest także wyświetlana w przypadku, gdy dokument HTML opublikowany w internecie jest wymieniony w wynikach wyszukiwania.
-Dozwolone jest użycie znacznika <title> w dokumencie tylko raz. Zaleca się, aby długość tekstu w znaczniku nie przekraczała 85 znaków (łącznie ze spacjami).
-Znacznik <title> jest znacznikiem parzystym (wymaga zamknięcia) i ma następującą postać:
-<title>Tytuł strony internetowej</title>
+  Jak już określiliśmy wcześniej, elementy sekcji &lt;head&gt; - poza jednym wyjątkiem - są niewidoczne. Jednakże, są niezbędne, aby dokument HTML był wyświetlany poprawnie.
+  Znacznik &lt;title&gt; to tytuł dokumentu HTML, warto zatem zadbać, aby zawierał treść odnoszącą się do jego zawartości oraz skrótowo ją charakteryzującą. Jest to jedyny znacznik, którego zawartość jest prezentowana użytkownikowi (w pasku tytułowym przeglądarki lub na karcie otwartego w przeglądarce dokumentu). Treść znacznika &lt;title&gt; jest także wyświetlana w przypadku, gdy dokument HTML opublikowany w internecie jest wymieniony w wynikach wyszukiwania.
+  Dozwolone jest użycie znacznika &lt;title&gt; w dokumencie tylko raz. Zaleca się, aby długość tekstu w znaczniku nie przekraczała 85 znaków (łącznie ze spacjami).
+  Znacznik &lt;title&gt; jest znacznikiem parzystym (wymaga zamknięcia) i ma następującą postać:
+  &lt;title&gt;Tytuł strony internetowej&lt;/title&gt;
 
-Znacznik <base> umożliwia określenie adresu internetowego (tzw. adresu URL) dla danego dokumentu HTML. Taki adres URL podajemy jako wartość w atrybucie href znacznika <base>. Do znacznika <base> możemy dołączyć atrybut target, który określa sposób otwarcia dokumentu - może ono być otwarte w tym samym (target="_parent") lub w nowym oknie czy też karcie przeglądarki (target="_blank").
+  Znacznik &lt;base&gt; umożliwia określenie adresu internetowego (tzw. adresu URL) dla danego dokumentu HTML. Taki adres URL podajemy jako wartość w atrybucie href znacznika &lt;base&gt;. Do znacznika &lt;base&gt; możemy dołączyć atrybut target, który określa sposób otwarcia dokumentu - może ono być otwarte w tym samym (target="_parent") lub w nowym oknie czy też karcie przeglądarki (target="_blank").
 
-Znacznik <base> jest znacznikiem nieparzystym (nie wymaga osobnego znacznika zamykającego) i ma następującą postać:
-<base href="http//adreswww.domena" />
+  Znacznik &lt;base&gt; jest znacznikiem nieparzystym (nie wymaga osobnego znacznika zamykającego) i ma następującą postać:
+  &lt;base href="http//adreswww.domena" /&gt;
 
-Znaczniki <meta> to grupa znaczników zawierających - obok znacznika <title> - najistotniejsze informacje o dokumencie HTML. Dzięki znacznikom <meta> możemy podać informacje m.in. o autorze dokumentu, dacie opublikowania i ważności dokumentu czy słowach kluczowych charakteryzujących dany dokument.
-Atrybutami znaczników <meta> są:
-- content, występujący w parze z atrybutem http-equiv lub z atrybutem name, może zawierać informacje np. o autorze dokumentu, czasie, po którym widok dokumentu zostanie automatycznie odświeżony w przeglądarce,
-- http-equiv, zawiera ogólne dyrektywy dla przeglądarki (np. dotyczące sposobu kodowania znaków czy odświeżenia widoku dokumentu w przeglądarce) i uściślone przez atrybut content, w jaki sposób ma ona traktować dany dokument HTML,
-- lang, atrybut języka, pozwalający określić, w jakim języku jest napisana zawartość dokumentu,
-- name, atrybut definiujący charakter treści zawartej w towarzyszącym mu atrybucie content,
-- scheme, służący do wprowadzania dodatkowej kategoryzacji dokumentu, np. przypisywania mu kategorii związanej z treścią lub autorem dokumentu.
+  Znaczniki &lt;meta&gt; to grupa znaczników zawierających - obok znacznika &lt;title&gt; - najistotniejsze informacje o dokumencie HTML. Dzięki znacznikom &lt;meta&gt; możemy podać informacje m.in. o autorze dokumentu, dacie opublikowania i ważności dokumentu czy słowach kluczowych charakteryzujących dany dokument.
+  Atrybutami znaczników &lt;meta&gt; są:
+  - content, występujący w parze z atrybutem http-equiv lub z atrybutem name, może zawierać informacje np. o autorze dokumentu, czasie, po którym widok dokumentu zostanie automatycznie odświeżony w przeglądarce,
+  - http-equiv, zawiera ogólne dyrektywy dla przeglądarki (np. dotyczące sposobu kodowania znaków czy odświeżenia widoku dokumentu w przeglądarce) i uściślone przez atrybut content, w jaki sposób ma ona traktować dany dokument HTML,
+  - lang, atrybut języka, pozwalający określić, w jakim języku jest napisana zawartość dokumentu,
+  - name, atrybut definiujący charakter treści zawartej w towarzyszącym mu atrybucie content,
+  - scheme, służący do wprowadzania dodatkowej kategoryzacji dokumentu, np. przypisywania mu kategorii związanej z treścią lub autorem dokumentu.
 
-Najczęściej spotykane znaczniki <meta> to:
-- kodowanie znaków, w najnowszym standardzie HTML5 używamy zestawu znaków UTF-8; przykład: <meta charset="utf-8" />
-- opis zawartości strony, pozwalający podać rozbudowany opis zawartości dokumentu; przykład: <meta name="description" content="słowny opis strony" />
-- słowa kluczowe, zawierający słowa charakteryzujące treśc danego dokumentu <meta name="keywords" content="wyraz1, wyraz2, wyraz3" />
-- autor dokumentu, pozwalający na podanie imienia i nazwiska lub pseudonimu autora danego dokumentu HTML; przykład: <meta name="Author" content="imię i nazwisko lub pseudonim nazwisko autora" />
-- kontakt do autora, <meta http-equiv="Reply-To" content="twój adres e-mail" />
-- data publikacji dokumentu, <meta http-equiv="Creation-Date" content="data" />
-- data ostatniej modyfikacji, <meta http-equiv="Last-Modified" content="data" />
-- data utraty ważności, informujący o aktualności danego dokumentu <meta http-equiv="Expires" content="data" />
-- ikonka strony, zawierający wskazanie pliku ikony graficznej, przykład: <link rel="shortcut icon" href="nazwa-pliku.ico" />
+  Najczęściej spotykane znaczniki &lt;meta&gt; to:
+  - kodowanie znaków, w najnowszym standardzie HTML5 używamy zestawu znaków UTF-8; przykład: &lt;meta charset="utf-8" /&gt;
+  - opis zawartości strony, pozwalający podać rozbudowany opis zawartości dokumentu; przykład: &lt;meta name="description" content="słowny opis strony" /&gt;
+  - słowa kluczowe, zawierający słowa charakteryzujące treśc danego dokumentu &lt;meta name="keywords" content="wyraz1, wyraz2, wyraz3" /&gt;
+  - autor dokumentu, pozwalający na podanie imienia i nazwiska lub pseudonimu autora danego dokumentu HTML; przykład: &lt;meta name="Author" content="imię i nazwisko lub pseudonim nazwisko autora" /&gt;
+  - kontakt do autora, &lt;meta http-equiv="Reply-To" content="twój adres e-mail" /&gt;
+  - data publikacji dokumentu, &lt;meta http-equiv="Creation-Date" content="data" /&gt;
+  - data ostatniej modyfikacji, &lt;meta http-equiv="Last-Modified" content="data" /&gt;
+  - data utraty ważności, informujący o aktualności danego dokumentu &lt;meta http-equiv="Expires" content="data" /&gt;
+  - ikonka strony, zawierający wskazanie pliku ikony graficznej, przykład: &lt;link rel="shortcut icon" href="nazwa-pliku.ico" /&gt;
 
-Znacznik <link> pozwala podłączyć do dokumentu HTML zewnętrzne pliki, zawierające m.in. arkusze stylów CSS czy skrypty napisane w języku JavaScript.
+  Znacznik &lt;link&gt; pozwala podłączyć do dokumentu HTML zewnętrzne pliki, zawierające m.in. arkusze stylów CSS czy skrypty napisane w języku JavaScript.
 
-Zaletą tego rozwiązania jest oddzielenie struktury określonej przez znaczniki kodu HTML oraz samej treści od jej strony wizualnej. Dzięki temu możemy definiować je niezależnie od siebie - np. zmiana wyglądu nie wpływa na treść, a sama zawartość może być prezentowana na różne sposoby. Znacząco wpływa to także na komfort pracy i ułatwia nanoszenie poprawek i rozbudowę dokumentu.
-Możemy także - w przypadku, gdy pojedyncze pliki zawierające zawartość opisaną kodem HTML tworzą uporządkowany ciąg - wskazywać ich logiczną kolejność, poprzez określenie dokumentu wcześniejszego i następnego.
+  Zaletą tego rozwiązania jest oddzielenie struktury określonej przez znaczniki kodu HTML oraz samej treści od jej strony wizualnej. Dzięki temu możemy definiować je niezależnie od siebie - np. zmiana wyglądu nie wpływa na treść, a sama zawartość może być prezentowana na różne sposoby. Znacząco wpływa to także na komfort pracy i ułatwia nanoszenie poprawek i rozbudowę dokumentu.
+  Możemy także - w przypadku, gdy pojedyncze pliki zawierające zawartość opisaną kodem HTML tworzą uporządkowany ciąg - wskazywać ich logiczną kolejność, poprzez określenie dokumentu wcześniejszego i następnego.
 
-Najważniejszymi atrybutami znacznika <link> są:
-- href, tworzący odniesienie np. do innego dokumentu HTML lub arkusza stylów CSS,
-- hreflang, określający język, w którym jest zapisana zawartość dokumentu wskazywanego przy użyciu atrybutu href,
-- lang, określający język zawartości dokumentu,
-- media, określający, na jakim urządzeniu powinna być wyświetlana zawartość dokumentu,
-- rel, określający relację dokumentu, który jest wskazywany, względem dokumentu zawierającego wskazanie.
+  Najważniejszymi atrybutami znacznika &lt;link&gt; są:
+  - href, tworzący odniesienie np. do innego dokumentu HTML lub arkusza stylów CSS,
+  - hreflang, określający język, w którym jest zapisana zawartość dokumentu wskazywanego przy użyciu atrybutu href,
+  - lang, określający język zawartości dokumentu,
+  - media, określający, na jakim urządzeniu powinna być wyświetlana zawartość dokumentu,
+  - rel, określający relację dokumentu, który jest wskazywany, względem dokumentu zawierającego wskazanie.
+
 
 </body>
 
