@@ -21,6 +21,75 @@ Idea jest prosta: używając odpowiednich atrybutów i właściwości umieszczam
 
 Gra podpowiada jakich atrybutów mamy użyć, naszym zadaniem jest dobrać ich odpowiednie wartości.
 
+## Język HTML
+
+Wprowadzony w 1997 HTML w wersji 4 posiadał wiele oganiczeń, toteż szybko
+stał się przestarzały. Sprawę komplikował fakt, iż projektanci stron
+internetowych nie zawsze pisali kod HTML zgodnie z przyjętymi standardami.
+Skutkowało to często m.in. niewłaściwym interpretowaniem kodu przez
+przeglądarki i niepoprawnym wyświetlaniem dokumentów. Rozpoczęto więc
+prace nad nową wersją języka. Ostatecznie pojawił się nowy standard -
+XHTML, w którym wprowadzono znacznie ściślejsze zasady dotyczące
+pisania kodu (np. wymóg, aby znaczniki języka HTML były zawsze były
+pisane małą literą). Dodatkowo, nowy standard oparto o inny język
+opisowy, powszechnie wykorzystywany do opisywania danych - XML. Wymusiło
+to zmiany w zapisie kodu w porównaniu do wcześniejszych wersji języka
+HTML (m.in. wspomniana wcześniej konieczność zamykania znaczników
+pojedynczych).
+
+Mimo, iż nowa wersja miała, w zamierzeniu, zapewnić
+większą zgodność pisowni dokumentów hipertekstowych z ustanowionymi
+standardami, ostatecznie wprowadziła dalsze komplikacje. Prace nad
+opracowaniem języka XHTML w wersji 2.0 zostały przerwane, rozpoczęto
+natomiast opracowywanie nowego standardu, który oznaczon jako HTML5.
+Cechami wyróżniającymi nową wersję języka jest uproszczenie kodu w
+stosunku do języka XHTML. Przywrócono także możliwość zapisywania
+znaczników wielkimi literami. Obok zmian w sposobie zapisu, język HTML5
+wnosi wiele nowych rozwiązań. Pojawiły się nowe znaczniki semantyczne,
+umożliwiające w więszym stopniu "rozumienie" treści w nie ujmowanych
+przez np. wyszukiwarki internetowe.
+
+Struktura dokumentu HTML określa porządek w dokumencie i umożliwia
+poprawną interpretację treści przez przeglądarki internetowe.
+Składają się na nią dwie części - sekcja head, czyli nagłówek
+dokumentu oraz sekcja body, w której zamieszczona jest treść dokumentu.
+
+Przeglądarki wyświetlają całą treść dokumentu zamieszczoną w sekcji
+body, natomiast - poza pewnymi wyjątkami - zawartość sekcji head jest
+dla odbiorcy niewidoczna.
+
+W określonych przypadkach dokument HTML może składać się wyłącznie z
+sekcji body.
+
+Pierwszym elementem dokumentu HTML jest określenie samego typu dokumentu.
+Zdefiniowano kilka rodzajów deklaracji typów dokumentu HTML, które
+określają zasady pisowni kodu HTML oraz zakres dozwolonych w ramach danej
+deklaracji znaczników oraz ich atrybutów.
+
+Deklarację typu dokumentu podajemy na samym początku dokumentu HTML.
+
+## Rodzaje deklaracji:
+
+Struktura przykładowego dokumentu w standardzie HTML5 wygląda
+następująco.
+
+Pierwszym znacznikiem kodu HTML, po określeniu typu dokumentu, jest
+znacznik *<html>*. Znacznik ten jest zamykany jako ostatni w kodzie
+dokumentu.
+
+Następnie otwierana jest sekcja nagłówka dokumentu. Nie powinno w niej
+zabraknąć znacznika *<title>*, czyli tytułu samego dokumentu (który jest
+wyświetlany przez przeglądarkę np. na karcie otwartego dokumentu).
+
+Bardzo istotnymi znacznikami są tzw. znaczniki meta. Nie są one widoczne
+dla użytkownika, pełnią jednak ważne funkcje. Do tej grupy należy
+m.in.
+
+- *<meta name="description" content="">* - zawierający rozszerzony opis strony,
+- *<meta name="author" content="">* - informujący o autorze dokumentu
+- *<meta name="robots" content="">* - określający sposób, w jaki dokument będzie traktowany
+przez tzw. roboty indeksujące (Google i innych wyszukiwarek)
+
 </body>
 
 </html>
