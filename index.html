@@ -153,36 +153,21 @@ Znacznik <head> zawiera istotne informacje o samym dokumencie HTML, umożliwiaj�
 Znacznik <head> jest znacznikiem parzystym i wymagane jest jego zamknięcie po określeniu wszystkich elementów opisujących dany dokument HTML.
 
 Znacznik <body> zawiera tę część dokumentu HTML, która jest wyświetlana w oknie przeglądarki. Znacznik ten znajduje się po zamknięciu znacznika <head>. W starszych wersjach języka HTML znacznika <body> używano także do określenia wyglądu dokumentu (tła, kolorystyki, rodzaju i wielkości czcionek). Obecnie te parametry definiujemy osobno w arkuszu stylów. Niemniej jednak, nadal możliwe jest określanie wyglądu dokumentu poprzez dodatkowe atrybuty w znaczniku <body>. Są to:
-
 - alink, określa kolor odnośnika w momencie kliknięcia w niego przez użytkownika; jeżeli odnośnikiem jest tekst, wówczas zmienia się kolor tekstu, a jeżeli obrazek - zmienia się kolor obramowania obrazka; nadanie atrybutu alink znacznikowi <body> ma następującą postać <body alink="green">
-background, definiuje tło obrazkowe dla dokumentu HTML; obrazek wskazany przez atrybut background zostanie wyświetlony w skali 1:1 i będzie wypełniał całe okno przeglądarki (w przypadku, gdy zawartość będzie miała większą powierzchnię, wówczas nastąpi jego zwielokrotnienie w pionie i w poziomie); nadanie atrybutu background ma postać: <body background="tlo.jpg"> (jako tło wskazujemy obrazek o nazwie tlo, przy czym wymagane jest podanie rozszerzenia pliku oraz wskazanie lokalizacji pliku - w tym przypadku plik tlo.jpg znajduje się w tej samek lokalizacji, co dokument HTML).
-
+- background, definiuje tło obrazkowe dla dokumentu HTML; obrazek wskazany przez atrybut background zostanie wyświetlony w skali 1:1 i będzie wypełniał całe okno przeglądarki (w przypadku, gdy zawartość będzie miała większą powierzchnię, wówczas nastąpi jego zwielokrotnienie w pionie i w poziomie); nadanie atrybutu background ma postać: <body background="tlo.jpg"> (jako tło wskazujemy obrazek o nazwie tlo, przy czym wymagane jest podanie rozszerzenia pliku oraz wskazanie lokalizacji pliku - w tym przypadku plik tlo.jpg znajduje się w tej samek lokalizacji, co dokument HTML).
 - bgcolor, określa jednolity kolor tła, wypeniającego okno dokumentu HTML; nadanie atrybutu bgcolor (w przypadku koloru niebieskiego) ma postać <body bgcolor="blue">; dla optymalnego efektu zaleca się, aby kolor tła był dopasowany do koloru tekstu dokumentu; w sytuacji, gdy połączymy atrybuty background i bgcolor pierwszeństwo posiada atrybut background - tło obrazkowe przykryje jednolity kolor tła.
-
 - bgproperties, pozwala zablokować tło obrazkowe w jednej pozycji; treść strony może być wówczas przewijana (jeżeli zajmuje większy obszar niż okno przeglądarki), natomiast obrazek tła pozostanie w tym samym miejscu; nadanie atrybutu ma postać <body background="tlo.jpg" bgproperties="fixed">.
-
 - bottommargin, umożliwia pozostawienie pustej przestrzeni w dolnej części dokumentu HTML wyświetlanego w przeglądarce (może być ona niewidoczna w sytuacji, gdy zawartość dokumentu zajmuje obszar mniejszy od obszaru okna przeglądarki); dla tego atrybutu nie podajemy jednostki miary - domyślnie jest to piksel; nadanie atrybutu ma postać <body bottommargin="20">
-
 - lang, analogicznie jak w przypadku znacznika <html>, atrybut ten pozwala okreslić język zawartości dokumentu HTML; nadanie atrybutu (w przypadku języka polskiego) ma postać <body lang="pl">
-
 - leftmargin, podobnie jak w przypadku atrybutu bottommargin, określamy pustą przestrzeń - tym razem z lewej strony; nadanie atrybutu ma postać <body leftmargin="20">
-
 - link, okresla kolor odnośnika, gdy użytkownik nie podejmuje wobec niego żadnych czynności, a także, gdy odnośnik nie był wcześniej odwiedzony; nadanie atrybutu link ma następującą postać <body link="green">
-
 - marginheight, podobnie jak w przypadku atrybutów bottommargin i leftmargin, określamy pustą przestrzeń - jednak tym razem jest to przestrzeń zarówno od góry, jak i od dołu zawartości strony; nadanie atrybutu ma postać <body marginheight="20">
-
 - marginwidth, tym razem określamy pustą przestrzeń z lewej i z prawej strony zawartości; nadanie atrybutu ma postać <body marginwidth="20">
--
- nowrap, definiuje, czy zawartość dokumentu HTML będzie zawijana w przypadku, gdy jej szerokość będzie większa niż szerokość okna przeglądarki; brak tego atrybutu oznacza, że zawijanie wierszy będzie występować; nadanie atrybutu (bez wartości) ma postać <body nowrap>
-
+- nowrap, definiuje, czy zawartość dokumentu HTML będzie zawijana w przypadku, gdy jej szerokość będzie większa niż szerokość okna przeglądarki; brak tego atrybutu oznacza, że zawijanie wierszy będzie występować; nadanie atrybutu (bez wartości) ma postać <body nowrap>
 - rightmargin, podobnie jak w przypadku atrybutów bottommargin, leftmargin, określamy pustą przestrzeń - tym razem z prawej strony; nadanie atrybutu ma postać <body rightmargin="20">
-
 - scroll, pozwala ukryć suwaki służące do przewijania zawartości; brak tego atrybutu oznacza, że takie suwaki będą wyświetlone;nadanie atrybutu (gdy chcemy ukryć suwaki) ma postać <body scroll="no">
-
 - text, określa kolor tekstu w dokumencie HTML; może jednak wystąpić sytuacja, że kolor zdefiniowany poprzez ten atrybut zostanie zmieniony, np. przez kolor odnośnika; nadanie atrybutu ma postać <body text="white">
-
 - topmargin, podobnie jak w przypadku atrybutów bottommargin, leftmargin i rightmargin, określamy pustą przestrzeń - tym razem z góry; nadanie atrybutu ma postać <body topmargin="20">
-
 - vlink, określa kolor odnośnika, który został wcześniej odwiedzony (kliknięty); kolor odnośnika nie powróci do pierwotnej postaci dopóki nie wyczyścimy ustawień przeglądarki; nadanie atrybutu ma postać <body vlink="yellow">.
 
 ## KOLORYSTYKA W DOKUMENCIE HTML
@@ -222,7 +207,6 @@ Znacznik <base> jest znacznikiem nieparzystym (nie wymaga osobnego znacznika zam
 
 Znaczniki <meta> to grupa znaczników zawierających - obok znacznika <title> - najistotniejsze informacje o dokumencie HTML. Dzięki znacznikom <meta> możemy podać informacje m.in. o autorze dokumentu, dacie opublikowania i ważności dokumentu czy słowach kluczowych charakteryzujących dany dokument.
 Atrybutami znaczników <meta> są:
-
 - content, występujący w parze z atrybutem http-equiv lub z atrybutem name, może zawierać informacje np. o autorze dokumentu, czasie, po którym widok dokumentu zostanie automatycznie odświeżony w przeglądarce,
 - http-equiv, zawiera ogólne dyrektywy dla przeglądarki (np. dotyczące sposobu kodowania znaków czy odświeżenia widoku dokumentu w przeglądarce) i uściślone przez atrybut content, w jaki sposób ma ona traktować dany dokument HTML,
 - lang, atrybut języka, pozwalający określić, w jakim języku jest napisana zawartość dokumentu,
