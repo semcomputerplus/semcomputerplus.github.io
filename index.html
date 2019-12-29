@@ -11,7 +11,7 @@
 
 <body>
 
-# Frontend Development 2019/2020
+  ## Frontend Development 2019/2020
 
   Sympatyczna gra na doskonalenie znajomości atrybutów Flexbox'a:
 
@@ -106,81 +106,127 @@
      &lt;/body&gt;
   &lt;/html&gt;
 
-  !DOCTYPE nie jest właściwie znacznikiem, jak pozostałe znaczniki języka HTML. To bardziej komentarz formatu SGML (Standard Generalized Markup language).
+  !DOCTYPE nie jest właściwie znacznikiem, jak pozostałe znaczniki języka HTML.
+  To bardziej komentarz formatu SGML (Standard Generalized Markup language).
+
   Jest to informacja, że dany dokument zawiera treść opisaną kodem języka HTML
-  Wymagane jest, aby !DOCTYPE - czyli okreslenie typu dokumentu (DTD - document type definition; DOC - skrót od dokument i TYP - typ) - znjadował się na samym początku dokumentu HTML (a zatem jeszcze przed znacznikiem &lt;html&gt;).
-  Zadeklarowanie typu dokumentu właśnie przez ten "znacznik" (czy też "znaczniko-komentarz") podaje instrukcję przeglądarce wyświetlającej ten dokument, niejako uprzedzając, z jakim rodzajem kodu ma ona do czynienia i jak należy ów kod wizualizować.
-  Niestety, podanie deklaracji typu dokumentu ma charakter wyłącznie informujący i - niestety - w przypadku, gdy internauta korzysta ze starszej wersji przeglądarki nie unikniemy problemów spowodowanych np. brakiem obsługi niektórych (zwłaszcza tych nowszych, charakterystycznych dla np. wersji 5 języka HTML) znaczników.
-  Zdefiniowano  kilka rodzajów !DOCTYPE, w zależności od wydań i odmian języka HTML. Obok informacji o rodzaju języka (HTML)podawana jest także informacja o wydawcy (W3C), wersji (4.01) oraz języku (EN). Ponadto, w deklaracji znajduje się odnośnik do witryny internetowej konsorcjum W3C, zawierający dokładną specyfikację danej wersji i odmiany języka HTML.
+
+  Wymagane jest, aby !DOCTYPE - czyli okreslenie typu dokumentu
+  (DTD - document type definition; DOC - skrót od dokument i TYP - typ) -
+  znjadował się na samym początku dokumentu HTML (a zatem jeszcze przed
+  znacznikiem &lt;html&gt;).
+
+  Zadeklarowanie typu dokumentu właśnie przez ten "znacznik" (czy też
+  "znaczniko-komentarz") podaje instrukcję przeglądarce wyświetlającej
+  ten dokument, niejako uprzedzając, z jakim rodzajem kodu ma ona do czynienia
+  i jak należy ów kod wizualizować.
+
+  Niestety, podanie deklaracji typu dokumentu ma charakter wyłącznie informujący
+  i - niestety - w przypadku, gdy internauta korzysta ze starszej wersji przeglądarki
+  nie unikniemy problemów spowodowanych np. brakiem obsługi niektórych (zwłaszcza
+  tych nowszych, charakterystycznych dla np. wersji 5 języka HTML) znaczników.
+  Zdefiniowano  kilka rodzajów !DOCTYPE, w zależności od wydań i odmian języka HTML.
+  Obok informacji o rodzaju języka (HTML)podawana jest także informacja o wydawcy (W3C),
+  wersji (4.01) oraz języku (EN). Ponadto, w deklaracji znajduje się odnośnik
+  do witryny internetowej konsorcjum W3C, zawierający dokładną specyfikację
+  danej wersji i odmiany języka HTML.
+
   Przykłady !DOCTYPE dla najpopularniejszych wersji i odmian języka HTML.
 
   Dla wersji 4.01 i odmiany ścisłej:
 
-  &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;
+  &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd"&gt;
 
   Dla wersji 4.01 i odmiany tzw. "luźnej":
 
-  &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;
+  &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd"&gt;
 
   Dla wersji XHTML 1.0 i odmiany ścisłej:
 
-  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
 
   Dla wersji XHTML 1.0 i odmiany "luźnej":
 
-  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 
-  Dla najnowszej wersji HTML5 (łatwo zauważyć znaczne uproszczenie deklaracji w porównaniu do wcześniejszych wersji języka):
+  Dla najnowszej wersji HTML5 (łatwo zauważyć znaczne uproszczenie deklaracji
+  w porównaniu do wcześniejszych wersji języka):
 
   &lt;!DOCTYPE HTML&gt;
 
-  Nasuwa się w tym miejscu pytanie - co się stanie w przypadku, gdy zabraknie !DOCTYPE lub będzie on podany błędnie. Otóż, przeglądarka przełączy się w tzw. "quirks mode", który spowoduje odmienne sposób traktowania danego dokumentu przez przeglądarkę - aplikacja będzie starać się wyświetlić dany dokument zgodnie z tzw. kompatybilnością wsteczną. Niestety, może to spowodować, że niektóre elementy kodu zostaną np. zignorowane lub dokument może wyświetlać się w inny niż oczekiwany sposób (a zatem, mimo braku błędów w składni dokumentu może on po prostu nie funkcjonować poprawnie).
+  Nasuwa się w tym miejscu pytanie - co się stanie w przypadku, gdy zabraknie
+  !DOCTYPE lub będzie on podany błędnie. Otóż, przeglądarka przełączy się
+  w tzw. "quirks mode", który spowoduje odmienne sposób traktowania danego
+  dokumentu przez przeglądarkę - aplikacja będzie starać się wyświetlić dany
+  dokument zgodnie z tzw. kompatybilnością wsteczną. Niestety, może to spowodować,
+  że niektóre elementy kodu zostaną np. zignorowane lub dokument może wyświetlać się
+  w inny niż oczekiwany sposób (a zatem, mimo braku błędów w składni dokumentu
+  może on po prostu nie funkcjonować poprawnie).
 
-  Znacznik &lt;html&gt; jest pierwszym znacznikiem języka HTML w pełnym tego słowa znaczeniu i jest pierwszym elementem kodu dokumentu (ustępując jedynie elementowi !DOCTYPE). Jest znacznikiem blokowym, w którym zawarte są wszystkie pozostałe znaczniki (head, body, h1, h2, p, itd.).  Ponieważ jest to znacznik parzysty, wymagane jest jego zamknięcie, które powinno się znajdować na końcu dokumentu HTML.
+  Znacznik &lt;html&gt; jest pierwszym znacznikiem języka HTML w pełnym tego słowa
+  znaczeniu i jest pierwszym elementem kodu dokumentu (ustępując jedynie elementowi
+  !DOCTYPE). Jest znacznikiem blokowym, w którym zawarte są wszystkie pozostałe
+  znaczniki (head, body, h1, h2, p, itd.).  Ponieważ jest to znacznik parzysty,
+  wymagane jest jego zamknięcie, które powinno się znajdować na końcu dokumentu HTML.
 
   Znacznik &lt;html&gt; posiada dodatkowe elementy - atrybuty. Są to:
 
-  - lang (language - ang. język), który określa język treści danego dokumentu; dla języka polskiego atrybut lang będzie miał postać &lt;html lang="pl"&gt;, dla niemieckiego - &lt;html lang="de"&gt;.
-  - xmlns (wymagany wyłącznie w wersji XHTML), który jest wykorzystywany przez przeglądarki z rodziny Internet Explorer do określenia elementów spoza języka HTML; zapisujemy ten atrybut w następującej postaci &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  - lang (language - ang. język), który określa język treści danego dokumentu;
+  dla języka polskiego atrybut lang będzie miał postać &lt;html lang="pl"&gt;,
+  dla niemieckiego - &lt;html lang="de"&gt;.
+  - xmlns (wymagany wyłącznie w wersji XHTML), który jest wykorzystywany przez
+  przeglądarki z rodziny Internet Explorer do określenia elementów spoza języka HTML;
+  zapisujemy ten atrybut w następującej postaci &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 
-  Znacznik &lt;head&gt; zawiera istotne informacje o samym dokumencie HTML, umożliwiające także jego poprawne wyświetlanie. Jednakże elementy sekcji head - poza jednym wyjątkiem - nie są widoczne w oknie przeglądarki. Zawierają się w niej takie elementy jak:
+  Znacznik &lt;head&gt; zawiera istotne informacje o samym dokumencie HTML,
+  umożliwiające także jego poprawne wyświetlanie. Jednakże elementy sekcji head -
+  poza jednym wyjątkiem - nie są widoczne w oknie przeglądarki.
 
-  - title, czyli tytuł dokumentu; jest to jedyny element, który jest widoczny na karcie przeglądarki, wyświetlany jest także, jeśli opublikowany dokument HTML zostanie wyświetlony w wyszukiwarce internetowej (np. Google, Bing, itp.), informacje o autorze, datę opublikowania dokumentu i wiele innych.
-  - znaczniki meta - jest to grupa znaczników zawierających informacje m.in. o kodowaniu znaków w dokumencie,  rozszerzony opis dokumentu, instrukcje dla wyszukiwarek.
-  - znaczniki link, umożliwiające dołączenie do dokumentu zewnętrznych plików, np. arkuszy stylów CSS, skryptów JavaScript, itp.
-  - w sekcji &lt;head&gt; można również bezpośrednio zapisywać dodatkowe elementy spoza języka HTML, np. wewnętrzny arkusz stylów CSS lub skrypty JavaScript.
+  Zawierają się w niej takie elementy jak:
+  - title, czyli tytuł dokumentu; jest to jedyny element, który jest widoczny
+  na karcie przeglądarki, wyświetlany jest także, jeśli opublikowany dokument
+  HTML zostanie wyświetlony w wyszukiwarce internetowej (np. Google, Bing, itp.),
+  informacje o autorze, datę opublikowania dokumentu i wiele innych.
+  - znaczniki meta - jest to grupa znaczników zawierających informacje m.in.
+  o kodowaniu znaków w dokumencie,  rozszerzony opis dokumentu, instrukcje dla wyszukiwarek.
+  - znaczniki link, umożliwiające dołączenie do dokumentu zewnętrznych plików,
+  np. arkuszy stylów CSS, skryptów JavaScript, itp.
+  - w sekcji &lt;head&gt; można również bezpośrednio zapisywać dodatkowe elementy
+  spoza języka HTML, np. wewnętrzny arkusz stylów CSS lub skrypty JavaScript.
 
-  Znacznik &lt;head&gt; jest znacznikiem parzystym i wymagane jest jego zamknięcie po określeniu wszystkich elementów opisujących dany dokument HTML.
+  Znacznik &lt;head&gt; jest znacznikiem parzystym i wymagane jest jego zamknięcie
+  po określeniu wszystkich elementów opisujących dany dokument HTML.
 
-  Znacznik &lt;body&gt; zawiera tę część dokumentu HTML, która jest wyświetlana w oknie przeglądarki. Znacznik ten znajduje się po zamknięciu znacznika &lt;head&gt;. W starszych wersjach języka HTML znacznika &lt;body&gt; używano także do określenia wyglądu dokumentu (tła, kolorystyki, rodzaju i wielkości czcionek). Obecnie te parametry definiujemy osobno w arkuszu stylów. Niemniej jednak, nadal możliwe jest określanie wyglądu dokumentu poprzez dodatkowe atrybuty w znaczniku &lt;body&gt;. Są to:
-  - alink, określa kolor odnośnika w momencie kliknięcia w niego przez użytkownika; jeżeli odnośnikiem jest tekst, wówczas zmienia się kolor tekstu, a jeżeli obrazek - zmienia się kolor obramowania obrazka; nadanie atrybutu alink znacznikowi &lt;body&gt; ma następującą postać &lt;body alink="green"&gt;
-  - background, definiuje tło obrazkowe dla dokumentu HTML; obrazek wskazany przez atrybut background zostanie wyświetlony w skali 1:1 i będzie wypełniał całe okno przeglądarki (w przypadku, gdy zawartość będzie miała większą powierzchnię, wówczas nastąpi jego zwielokrotnienie w pionie i w poziomie); nadanie atrybutu background ma postać: &lt;body background="tlo.jpg"&gt; (jako tło wskazujemy obrazek o nazwie tlo, przy czym wymagane jest podanie rozszerzenia pliku oraz wskazanie lokalizacji pliku - w tym przypadku plik tlo.jpg znajduje się w tej samek lokalizacji, co dokument HTML).
-  - bgcolor, określa jednolity kolor tła, wypeniającego okno dokumentu HTML; nadanie atrybutu bgcolor (w przypadku koloru niebieskiego) ma postać &lt;body bgcolor="blue"&gt;; dla optymalnego efektu zaleca się, aby kolor tła był dopasowany do koloru tekstu dokumentu; w sytuacji, gdy połączymy atrybuty background i bgcolor pierwszeństwo posiada atrybut background - tło obrazkowe przykryje jednolity kolor tła.
-  - bgproperties, pozwala zablokować tło obrazkowe w jednej pozycji; treść strony może być wówczas przewijana (jeżeli zajmuje większy obszar niż okno przeglądarki), natomiast obrazek tła pozostanie w tym samym miejscu; nadanie atrybutu ma postać &lt;body background="tlo.jpg" bgproperties="fixed"&gt;.
-  - bottommargin, umożliwia pozostawienie pustej przestrzeni w dolnej części dokumentu HTML wyświetlanego w przeglądarce (może być ona niewidoczna w sytuacji, gdy zawartość dokumentu zajmuje obszar mniejszy od obszaru okna przeglądarki); dla tego atrybutu nie podajemy jednostki miary - domyślnie jest to piksel; nadanie atrybutu ma postać &lt;body bottommargin="20"&gt;
-  - lang, analogicznie jak w przypadku znacznika &lt;html&gt;, atrybut ten pozwala okreslić język zawartości dokumentu HTML; nadanie atrybutu (w przypadku języka polskiego) ma postać &lt;body lang="pl"&gt;
-  - leftmargin, podobnie jak w przypadku atrybutu bottommargin, określamy pustą przestrzeń - tym razem z lewej strony; nadanie atrybutu ma postać &lt;body leftmargin="20"&gt;
-  - link, okresla kolor odnośnika, gdy użytkownik nie podejmuje wobec niego żadnych czynności, a także, gdy odnośnik nie był wcześniej odwiedzony; nadanie atrybutu link ma następującą postać &lt;body link="green"&gt;
-  - marginheight, podobnie jak w przypadku atrybutów bottommargin i leftmargin, określamy pustą przestrzeń - jednak tym razem jest to przestrzeń zarówno od góry, jak i od dołu zawartości strony; nadanie atrybutu ma postać &lt;body marginheight="20"&gt;
-  - marginwidth, tym razem określamy pustą przestrzeń z lewej i z prawej strony zawartości; nadanie atrybutu ma postać &lt;body marginwidth="20"&gt;
-  - nowrap, definiuje, czy zawartość dokumentu HTML będzie zawijana w przypadku, gdy jej szerokość będzie większa niż szerokość okna przeglądarki; brak tego atrybutu oznacza, że zawijanie wierszy będzie występować; nadanie atrybutu (bez wartości) ma postać &lt;body nowrap&gt;
-  - rightmargin, podobnie jak w przypadku atrybutów bottommargin, leftmargin, określamy pustą przestrzeń - tym razem z prawej strony; nadanie atrybutu ma postać &lt;body rightmargin="20"&gt;
-  - scroll, pozwala ukryć suwaki służące do przewijania zawartości; brak tego atrybutu oznacza, że takie suwaki będą wyświetlone;nadanie atrybutu (gdy chcemy ukryć suwaki) ma postać &lt;body scroll="no"&gt;
-  - text, określa kolor tekstu w dokumencie HTML; może jednak wystąpić sytuacja, że kolor zdefiniowany poprzez ten atrybut zostanie zmieniony, np. przez kolor odnośnika; nadanie atrybutu ma postać &lt;body text="white"&gt;
-  - topmargin, podobnie jak w przypadku atrybutów bottommargin, leftmargin i rightmargin, określamy pustą przestrzeń - tym razem z góry; nadanie atrybutu ma postać &lt;body topmargin="20"&gt;
-  - vlink, określa kolor odnośnika, który został wcześniej odwiedzony (kliknięty); kolor odnośnika nie powróci do pierwotnej postaci dopóki nie wyczyścimy ustawień przeglądarki; nadanie atrybutu ma postać &lt;body vlink="yellow"&gt;.
+  Znacznik &lt;body&gt; zawiera tę część dokumentu HTML, która jest wyświetlana
+  w oknie przeglądarki. Znacznik ten znajduje się po zamknięciu znacznika &lt;head&gt;.
+  W starszych wersjach języka HTML znacznika &lt;body&gt; używano także
+  do określenia wyglądu dokumentu (tła, kolorystyki, rodzaju i wielkości czcionek).
+  Obecnie te parametry definiujemy osobno w arkuszu stylów.
 
   ## KOLORYSTYKA W DOKUMENCIE HTML
 
   Kolorystykę w dokumencie HTML (oraz w arkuszach stylów CSS) definiujemy na 4 sposoby - poprzez podanie ściśle określonej nazwy koloru, zapis szesnastkowy koloru, zapis przy użyciu wartość kolorów składowych (czerwonego, zielonego i niebieskiego) oraz poprzez podanie cech koloru (odcienia, nasycenia i jasności).
+
   Przeglądarki poprawnie interpretują i wyświetlają kolory zdefiniowane przy użyciu angielskich słów, np. red - kolor czerwony, orange - pomarańczowy. Specyfikacja języka HTML 4.01 określa zaledwie 16 kolorów (cyjan, czarny, niebieski, fuksja, zielony, szary, limonka, wiśniowy, granatowy, oliwkowy, fioletowy, czerwony, srebrny, morski, biały, żółty).
+
   Obecnie do dyspozycji mamy kilkadziesiąt różnych odcieni następujących kolorów: czerwonego, różowego, pomarańczowego, żółtego, fioletowego, zielonego, niebieskiego, brązowego, białego oraz szarego.
+
   Znacznie wygodniejszym i dającym większe możliwości definiowania kolorów jest zapis szesnastkowy, na który składa się sześć znaków zapisanych w systemie szesnastkowym (cyfry od 0 do 9 oraz litery od A do F), które łącznie tworzą 3 bajty (1 bajt = 1 para znaków).
+
   Zgodnie ze sposobem generowania barw opartym o RGB (ang. red, green, blue - czerwony, zielony, niebieski) poszczególne bajty tworzą kolejno: barwę czerwoną, zieloną i niebieską. Każdy bajt może przyjmować wartości od 0 (wartość najmniejsza, w zapisie szesnastkowym 00) do 255 (wartość największa, w zapisie szesnastkowym ff).
+
   Jeżeli w parze występują identyczne znaki (np. 00, aa, ff) możemy użyć formy skróconej (0, a, f).
+
   Dzięki użyciu zapisu szesnastkowego możemy zapisać ponad 16 milionów różnych barw(256 razy 256 = 16 777 216).
+
   Określenie koloru białego (wartość maksymalna) ma postać #ffffff. W postaci skróconej - #fff.
+
   Zapis przy użyciu wartości RGB jest analogiczny do szesnastkowego. Zamiast podania wartości danego koloru w postaci zapisu szesnastkowego podajemy zapis dziesiętny (wartości podajemy w nawiasach kołowych, oddzielając je przecinkami).
+
   Określenie koloru czarnego (wartość minimalna) ma postać RGB(0,0,0).
 
   Wykorzystanie zapisu dziesiętnego posiada pewną zaletę. Możemy bowiem zdefiniować czwartą wartość - przezroczystość barwy. Aby to zrobić dodajemy czwarty znak, literę A do określenia trybu zapisu barw i podajemy czwartą wartość, która przyjmuje wartosci z zakresu 0-1, gdzie 0 oznacza pełną przezroczystość, a 1 - pełne krycie).
