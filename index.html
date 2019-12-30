@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Frontend Development 2019</title>
-  <script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><noscript>
+  <script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script>
 </head>
 
 <body>
@@ -209,55 +209,97 @@
 
   ## KOLORYSTYKA W DOKUMENCIE HTML
 
-  Kolorystykę w dokumencie HTML (oraz w arkuszach stylów CSS) definiujemy na 4 sposoby - poprzez podanie ściśle określonej nazwy koloru, zapis szesnastkowy koloru, zapis przy użyciu wartość kolorów składowych (czerwonego, zielonego i niebieskiego) oraz poprzez podanie cech koloru (odcienia, nasycenia i jasności).
+  Kolorystykę w dokumencie HTML (oraz w arkuszach stylów CSS) definiujemy na 4 sposoby - 
+  poprzez podanie ściśle określonej nazwy koloru, zapis szesnastkowy koloru, zapis 
+  przy użyciu wartość kolorów składowych (czerwonego, zielonego i niebieskiego) oraz poprzez 
+  podanie cech koloru (odcienia, nasycenia i jasności).
 
-  Przeglądarki poprawnie interpretują i wyświetlają kolory zdefiniowane przy użyciu angielskich słów, np. red - kolor czerwony, orange - pomarańczowy. Specyfikacja języka HTML 4.01 określa zaledwie 16 kolorów (cyjan, czarny, niebieski, fuksja, zielony, szary, limonka, wiśniowy, granatowy, oliwkowy, fioletowy, czerwony, srebrny, morski, biały, żółty).
+  Przeglądarki poprawnie interpretują i wyświetlają kolory zdefiniowane przy użyciu angielskich 
+  słów, np. red - kolor czerwony, orange - pomarańczowy. Specyfikacja języka HTML 4.01 określa 
+  zaledwie 16 kolorów (cyjan, czarny, niebieski, fuksja, zielony, szary, limonka, wiśniowy, 
+  granatowy, oliwkowy, fioletowy, czerwony, srebrny, morski, biały, żółty).
 
-  Obecnie do dyspozycji mamy kilkadziesiąt różnych odcieni następujących kolorów: czerwonego, różowego, pomarańczowego, żółtego, fioletowego, zielonego, niebieskiego, brązowego, białego oraz szarego.
+  Obecnie do dyspozycji mamy kilkadziesiąt różnych odcieni następujących kolorów: czerwonego, 
+  różowego, pomarańczowego, żółtego, fioletowego, zielonego, niebieskiego, brązowego, 
+  białego oraz szarego.
 
-  Znacznie wygodniejszym i dającym większe możliwości definiowania kolorów jest zapis szesnastkowy, na który składa się sześć znaków zapisanych w systemie szesnastkowym (cyfry od 0 do 9 oraz litery od A do F), które łącznie tworzą 3 bajty (1 bajt = 1 para znaków).
+  Znacznie wygodniejszym i dającym większe możliwości definiowania kolorów jest zapis szesnastkowy, 
+  na który składa się sześć znaków zapisanych w systemie szesnastkowym (cyfry od 0 do 9 
+  oraz litery od A do F), które łącznie tworzą 3 bajty (1 bajt = 1 para znaków).
 
-  Zgodnie ze sposobem generowania barw opartym o RGB (ang. red, green, blue - czerwony, zielony, niebieski) poszczególne bajty tworzą kolejno: barwę czerwoną, zieloną i niebieską. Każdy bajt może przyjmować wartości od 0 (wartość najmniejsza, w zapisie szesnastkowym 00) do 255 (wartość największa, w zapisie szesnastkowym ff).
+  Zgodnie ze sposobem generowania barw opartym o RGB (ang. red, green, blue - czerwony, zielony, 
+  niebieski) poszczególne bajty tworzą kolejno: barwę czerwoną, zieloną i niebieską. 
+  Każdy bajt może przyjmować wartości od 0 (wartość najmniejsza, w zapisie szesnastkowym 00) 
+  do 255 (wartość największa, w zapisie szesnastkowym ff).
 
   Jeżeli w parze występują identyczne znaki (np. 00, aa, ff) możemy użyć formy skróconej (0, a, f).
 
-  Dzięki użyciu zapisu szesnastkowego możemy zapisać ponad 16 milionów różnych barw(256 razy 256 = 16 777 216).
+  Dzięki użyciu zapisu szesnastkowego możemy zapisać ponad 16 milionów różnych barw 
+  (256 razy 256 = 16 777 216).
 
   Określenie koloru białego (wartość maksymalna) ma postać #ffffff. W postaci skróconej - #fff.
 
-  Zapis przy użyciu wartości RGB jest analogiczny do szesnastkowego. Zamiast podania wartości danego koloru w postaci zapisu szesnastkowego podajemy zapis dziesiętny (wartości podajemy w nawiasach kołowych, oddzielając je przecinkami).
+  Zapis przy użyciu wartości RGB jest analogiczny do szesnastkowego. Zamiast podania wartości 
+  danego koloru w postaci zapisu szesnastkowego podajemy zapis dziesiętny (wartości podajemy 
+  w nawiasach kołowych, oddzielając je przecinkami).
 
   Określenie koloru czarnego (wartość minimalna) ma postać RGB(0,0,0).
 
-  Wykorzystanie zapisu dziesiętnego posiada pewną zaletę. Możemy bowiem zdefiniować czwartą wartość - przezroczystość barwy. Aby to zrobić dodajemy czwarty znak, literę A do określenia trybu zapisu barw i podajemy czwartą wartość, która przyjmuje wartosci z zakresu 0-1, gdzie 0 oznacza pełną przezroczystość, a 1 - pełne krycie).
+  Wykorzystanie zapisu dziesiętnego posiada pewną zaletę. Możemy bowiem zdefiniować czwartą 
+  wartość - przezroczystość barwy. Aby to zrobić dodajemy czwarty znak, literę A do określenia 
+  trybu zapisu barw i podajemy czwartą wartość, która przyjmuje wartosci z zakresu 0-1, 
+  gdzie 0 oznacza pełną przezroczystość, a 1 - pełne krycie).
 
   Określenie koloru czarnego z niewielką przezroczystością ma postać RGBA(0,0,0,0.8).
 
-  Zapis przy użyciu modelu HSB (Hue - odcień, S - nasycenie, B - jasność) jest analogiczna do zapisu przy użyciu modelu RGB. Zamiast podawania wartości poszczególnych składowych barwy określamy wartości odcienia, nasycenia i jasności danej barwy. W przypadku trybu HSB również możemy podać czwartą wartość określającą stopień przezroczystości barwy.
+  Zapis przy użyciu modelu HSB (Hue - odcień, S - nasycenie, B - jasność) jest analogiczna 
+  do zapisu przy użyciu modelu RGB. Zamiast podawania wartości poszczególnych składowych 
+  barwy określamy wartości odcienia, nasycenia i jasności danej barwy. W przypadku trybu HSB 
+  również możemy podać czwartą wartość określającą stopień przezroczystości barwy.
   Zapis ma następującą postać: HSB(255, 100, 20).
 
-  Ze względu na - nieaktualne obecnie, choć nadal spotykamy tę opcję w programach graficznych - ograniczenia, dążąc do jednakowego wyświetlania kolorów na różnych urządzeniach, stosowano tzw. bezpieczny zestaw kolorów, liczący 216 barw. Cechą wyróżniającą zestawu jest to, że każda wartość może przyjmować jedną z sześciu wartości szesnastkowych: 0x00, 0x33, 0x66, 0x99, 0xCC lub 0xFF.
+  Ze względu na - nieaktualne obecnie, choć nadal spotykamy tę opcję w programach graficznych - 
+  ograniczenia, dążąc do jednakowego wyświetlania kolorów na różnych urządzeniach, stosowano 
+  tzw. bezpieczny zestaw kolorów, liczący 216 barw. Cechą wyróżniającą zestawu jest to, 
+  że każda wartość może przyjmować jedną z sześciu wartości szesnastkowych: 0x00, 0x33, 0x66, 0x99, 
+  0xCC lub 0xFF.
 
   ## ELEMENTY SEKCJI HEAD
 
-  Jak już określiliśmy wcześniej, elementy sekcji &lt;head&gt; - poza jednym wyjątkiem - są niewidoczne. Jednakże, są niezbędne, aby dokument HTML był wyświetlany poprawnie.
-  Znacznik &lt;title&gt; to tytuł dokumentu HTML, warto zatem zadbać, aby zawierał treść odnoszącą się do jego zawartości oraz skrótowo ją charakteryzującą. Jest to jedyny znacznik, którego zawartość jest prezentowana użytkownikowi (w pasku tytułowym przeglądarki lub na karcie otwartego w przeglądarce dokumentu). Treść znacznika &lt;title&gt; jest także wyświetlana w przypadku, gdy dokument HTML opublikowany w internecie jest wymieniony w wynikach wyszukiwania.
-  Dozwolone jest użycie znacznika &lt;title&gt; w dokumencie tylko raz. Zaleca się, aby długość tekstu w znaczniku nie przekraczała 85 znaków (łącznie ze spacjami).
+  Jak już określiliśmy wcześniej, elementy sekcji &lt;head&gt; - poza jednym wyjątkiem - są niewidoczne. 
+  Jednakże, są niezbędne, aby dokument HTML był wyświetlany poprawnie.
+  Znacznik &lt;title&gt; to tytuł dokumentu HTML, warto zatem zadbać, aby zawierał treść odnoszącą się 
+  do jego zawartości oraz skrótowo ją charakteryzującą. Jest to jedyny znacznik, którego zawartość 
+  jest prezentowana użytkownikowi (w pasku tytułowym przeglądarki lub na karcie otwartego w przeglądarce 
+  dokumentu). Treść znacznika &lt;title&gt; jest także wyświetlana w przypadku, gdy dokument HTML 
+  opublikowany w internecie jest wymieniony w wynikach wyszukiwania.
+  Dozwolone jest użycie znacznika &lt;title&gt; w dokumencie tylko raz. Zaleca się, aby długość tekstu 
+  w znaczniku nie przekraczała 85 znaków (łącznie ze spacjami).
   Znacznik &lt;title&gt; jest znacznikiem parzystym (wymaga zamknięcia) i ma następującą postać:
   &lt;title&gt;Tytuł strony internetowej&lt;/title&gt;
 
-  Znacznik &lt;base&gt; umożliwia określenie adresu internetowego (tzw. adresu URL) dla danego dokumentu HTML. Taki adres URL podajemy jako wartość w atrybucie href znacznika &lt;base&gt;. Do znacznika &lt;base&gt; możemy dołączyć atrybut target, który określa sposób otwarcia dokumentu - może ono być otwarte w tym samym (target="_parent") lub w nowym oknie czy też karcie przeglądarki (target="_blank").
+  Znacznik &lt;base&gt; umożliwia określenie adresu internetowego (tzw. adresu URL) dla danego 
+  dokumentu HTML. Taki adres URL podajemy jako wartość w atrybucie href znacznika &lt;base&gt;. 
+  Do znacznika &lt;base&gt; możemy dołączyć atrybut target, który określa sposób otwarcia dokumentu - 
+  może ono być otwarte w tym samym (target="_parent") lub w nowym oknie czy też karcie przeglądarki 
+  (target="_blank").
 
-  Znacznik &lt;base&gt; jest znacznikiem nieparzystym (nie wymaga osobnego znacznika zamykającego) i ma następującą postać:
+  Znacznik &lt;base&gt; jest znacznikiem nieparzystym (nie wymaga osobnego znacznika zamykającego) 
+  i ma następującą postać:
   &lt;base href="http//adreswww.domena" /&gt;
 
-  Znaczniki &lt;meta&gt; to grupa znaczników zawierających - obok znacznika &lt;title&gt; - najistotniejsze informacje o dokumencie HTML. Dzięki znacznikom &lt;meta&gt; możemy podać informacje m.in. o autorze dokumentu, dacie opublikowania i ważności dokumentu czy słowach kluczowych charakteryzujących dany dokument.
+  Znaczniki &lt;meta&gt; to grupa znaczników zawierających - obok znacznika &lt;title&gt; - najistotniejsze 
+  informacje o dokumencie HTML. Dzięki znacznikom &lt;meta&gt; możemy podać informacje m.in. o autorze dokumentu, dacie opublikowania i ważności dokumentu czy słowach kluczowych charakteryzujących dany dokument.
   Atrybutami znaczników &lt;meta&gt; są:
-  - content, występujący w parze z atrybutem http-equiv lub z atrybutem name, może zawierać informacje np. o autorze dokumentu, czasie, po którym widok dokumentu zostanie automatycznie odświeżony w przeglądarce,
-  - http-equiv, zawiera ogólne dyrektywy dla przeglądarki (np. dotyczące sposobu kodowania znaków czy odświeżenia widoku dokumentu w przeglądarce) i uściślone przez atrybut content, w jaki sposób ma ona traktować dany dokument HTML,
+  - content, występujący w parze z atrybutem http-equiv lub z atrybutem name, może zawierać informacje 
+  np. o autorze dokumentu, czasie, po którym widok dokumentu zostanie automatycznie odświeżony w przeglądarce,
+  - http-equiv, zawiera ogólne dyrektywy dla przeglądarki (np. dotyczące sposobu kodowania znaków 
+  czy odświeżenia widoku dokumentu w przeglądarce) i uściślone przez atrybut content, w jaki sposób 
+  ma ona traktować dany dokument HTML,
   - lang, atrybut języka, pozwalający określić, w jakim języku jest napisana zawartość dokumentu,
   - name, atrybut definiujący charakter treści zawartej w towarzyszącym mu atrybucie content,
-  - scheme, służący do wprowadzania dodatkowej kategoryzacji dokumentu, np. przypisywania mu kategorii związanej z treścią lub autorem dokumentu.
+  - scheme, służący do wprowadzania dodatkowej kategoryzacji dokumentu, np. przypisywania mu 
+  kategorii związanej z treścią lub autorem dokumentu.
 
   Najczęściej spotykane znaczniki &lt;meta&gt; to:
   - kodowanie znaków, w najnowszym standardzie HTML5 używamy zestawu znaków UTF-8; przykład: &lt;meta charset="utf-8" /&gt;
@@ -270,14 +312,22 @@
   - data utraty ważności, informujący o aktualności danego dokumentu &lt;meta http-equiv="Expires" content="data" /&gt;
   - ikonka strony, zawierający wskazanie pliku ikony graficznej, przykład: &lt;link rel="shortcut icon" href="nazwa-pliku.ico" /&gt;
 
-  Znacznik &lt;link&gt; pozwala podłączyć do dokumentu HTML zewnętrzne pliki, zawierające m.in. arkusze stylów CSS czy skrypty napisane w języku JavaScript.
+  Znacznik &lt;link&gt; pozwala podłączyć do dokumentu HTML zewnętrzne pliki, zawierające 
+  m.in. arkusze stylów CSS czy skrypty napisane w języku JavaScript.
 
-  Zaletą tego rozwiązania jest oddzielenie struktury określonej przez znaczniki kodu HTML oraz samej treści od jej strony wizualnej. Dzięki temu możemy definiować je niezależnie od siebie - np. zmiana wyglądu nie wpływa na treść, a sama zawartość może być prezentowana na różne sposoby. Znacząco wpływa to także na komfort pracy i ułatwia nanoszenie poprawek i rozbudowę dokumentu.
-  Możemy także - w przypadku, gdy pojedyncze pliki zawierające zawartość opisaną kodem HTML tworzą uporządkowany ciąg - wskazywać ich logiczną kolejność, poprzez określenie dokumentu wcześniejszego i następnego.
+  Zaletą tego rozwiązania jest oddzielenie struktury określonej przez znaczniki kodu HTML 
+  oraz samej treści od jej strony wizualnej. Dzięki temu możemy definiować je niezależnie 
+  od siebie - np. zmiana wyglądu nie wpływa na treść, a sama zawartość może być prezentowana 
+  na różne sposoby. Znacząco wpływa to także na komfort pracy i ułatwia nanoszenie poprawek 
+  i rozbudowę dokumentu.
+  Możemy także - w przypadku, gdy pojedyncze pliki zawierające zawartość opisaną kodem HTML 
+  tworzą uporządkowany ciąg - wskazywać ich logiczną kolejność, poprzez określenie dokumentu 
+  wcześniejszego i następnego.
 
   Najważniejszymi atrybutami znacznika &lt;link&gt; są:
   - href, tworzący odniesienie np. do innego dokumentu HTML lub arkusza stylów CSS,
-  - hreflang, określający język, w którym jest zapisana zawartość dokumentu wskazywanego przy użyciu atrybutu href,
+  - hreflang, określający język, w którym jest zapisana zawartość dokumentu wskazywanego 
+  przy użyciu atrybutu href,
   - lang, określający język zawartości dokumentu,
   - media, określający, na jakim urządzeniu powinna być wyświetlana zawartość dokumentu,
   - rel, określający relację dokumentu, który jest wskazywany, względem dokumentu zawierającego wskazanie.
